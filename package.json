@@ -26,6 +26,9 @@
     "publish.js"
   ],
   "scripts": {
+    "preversion": "npm run lint && npm run build",
+    "clean": "rm -rf webdoc publish.js",
+    "prebuild": "npm run clean",
     "build": "tsc",
     "lint": "eslint --cache --ext .ts src --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix",
