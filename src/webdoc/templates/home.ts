@@ -9,7 +9,7 @@ export function generateHomePage(outdir: string)
         {
             const pkg = packages.get(id);
 
-            return `* [${pkg?.name}](./api/modules/${pkg?.mdName})`;
+            return `* [${pkg?.name}](./modules/${pkg?.mdName}.mdx)`;
         })
         .join(`\n`);
 
