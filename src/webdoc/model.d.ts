@@ -192,7 +192,7 @@ declare module '@webdoc/model'
     export type PackageDoc = BaseDoc & {
         api: Doc[];
         location: string;
-        metadata: Object;
+        metadata: any;
         type: 'PackageDoc';
     };
 
